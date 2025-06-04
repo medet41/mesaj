@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kurban Bayramı Mesajı</title>
+    <style>
+        body {
+            background-image: url('pngtree-mesmerizing-blend-of-blue-and-purple-hues-in-a-stunning-abstract-picture-image_5788702.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+        #mesaj {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.75);
+            padding: 20px 30px;
+            border-radius: 15px;
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
+        #btn {
+            padding: 12px 24px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #0077b6;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #btn:hover {
+            background-color: #005f8a;
+        }
+    </style>
+</head>
+<body>
+    <div id="mesaj"></div>
+    <button id="btn" onclick="gosterMesaj()">Yeni Mesaj Göster</button>
+
+    <script>
+        const mesajlar = [
+            "Kurban Bayramınız mübarek olsun!",
+            "Sevdiklerinizle birlikte huzur dolu bir Kurban Bayramı dilerim.",
+            "Kurban Bayramı, paylaşmanın ve sevmenin bayramıdır. Kutlu olsun!",
+            "Bayramda gönlünüzce sevin, dostça sarılın!",
+            "Bereketin ve huzurun sofranızdan eksik olmadığı bir bayram olsun.",
+            "Kurban Bayramı kalplere merhamet, yüzlere tebessüm getirsin.",
+            "Bayram sevincini doyasıya yaşamanız dileğiyle!",
+            "Kurban Bayramı, kalpleri birleştirsin, küslükleri gidersin.",
+            "Bayramınız sağlık, huzur ve neşeyle dolsun!",
+            "Kurban Bayramı’nda gönlünüz ferah, sofranız bereketli olsun!",
+            "Dostlukların tazelendiği, duaların kabul olduğu bir bayram dilerim.",
+            "Kurban Bayramı, yardımlaşma ve paylaşma duygularını artırır. Nice bayramlara!",
+            "Kurban Bayramı'nız sevgiyle, barışla, mutlulukla dolsun.",
+            "Küskünlerin barıştığı, sevgilerin çoğaldığı bir bayram olsun.",
+            "Bu bayramda en güzel duygular sizinle olsun.",
+            "Kurban Bayramı; umut, sabır ve sevgiyle gelsin.",
+            "Bayramlar kalpleri birleştirir, sizi sevdiklerinizle buluştursun.",
+            "Kurban Bayramı'nız bereketli, kalbiniz huzur dolu olsun.",
+            "Kurban ruhunu yüreğinizde hissedeceğiniz güzel bir bayram dilerim.",
+            "Nice kurban bayramlarına, sağlık ve mutlulukla ulaşmanız dileğiyle!"
+        ];
+
+        function gosterMesaj() {
+            const rastgeleIndex = Math.floor(Math.random() * mesajlar.length);
+            document.getElementById("mesaj").innerText = mesajlar[rastgeleIndex];
+        }
+
+        window.onload = gosterMesaj;
+    </script>
+</body>
+</html>
